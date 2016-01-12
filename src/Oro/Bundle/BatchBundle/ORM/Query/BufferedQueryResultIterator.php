@@ -238,6 +238,7 @@ class BufferedQueryResultIterator implements \Iterator, \Countable
         $this->page       = -1;
         $this->position   = -1;
         $this->current    = null;
+        unset($this->rows);
 
         $this->next();
     }
